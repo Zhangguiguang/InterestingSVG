@@ -1,3 +1,3 @@
 # interesting
 
-![](https://github.com/Zhangguiguang/interesting/blob/master/6角星.svg)
+![](https://raw.githubusercontent.com/Zhangguiguang/interesting/master/6角星.svg)
