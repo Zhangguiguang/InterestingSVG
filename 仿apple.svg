@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<svg width="200" height="200" viewBox="-100 -100 200 200"
+     xmlns="http://www.w3.org/2000/svg" version="1.1"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+
+     <defs>
+         <g id="cc">
+             <circle cx="0" cy="-50" r="50" fill="#ff0ff022"/>
+         </g>
+     </defs>
+
+     <use xlink:href="#cc" id="oo"/>
+     <use xlink:href="#cc" transform="rotate(45)"/>
+     <use xlink:href="#cc" transform="rotate(90)"/>
+     <use xlink:href="#cc" transform="rotate(135)"/>
+     <use xlink:href="#cc" transform="rotate(180)"/>
+     <use xlink:href="#cc" transform="rotate(225)"/>
+     <use xlink:href="#cc" transform="rotate(270)"/>
+     <use xlink:href="#cc" transform="rotate(315)"/>
+
+</svg>
