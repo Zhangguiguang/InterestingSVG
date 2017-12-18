@@ -3,19 +3,40 @@
      xmlns="http://www.w3.org/2000/svg" version="1.1"
      xmlns:xlink="http://www.w3.org/1999/xlink">
 
-     <defs>
-         <g id="cc">
-             <circle cx="0" cy="-50" r="50" fill="#ff0ff022"/>
-         </g>
-     </defs>
+  <style>
+      #flower {
+        animation-name:my-rotate;
+        animation-duration:5s;
+        animation-timing-function:linear;
+        animation-iteration-count:infinite;
+      }
+      @keyframes my-rotate {
+        0% {
+          transform:rotate(0deg) ;
+        }
+        50% {
+          transform:rotate(180deg);
+        }
+        100% {
+          transform:rotate(360deg);
+        }
+      }
+  </style>
 
-     <use xlink:href="#cc" id="oo"/>
-     <use xlink:href="#cc" transform="rotate(45)"/>
-     <use xlink:href="#cc" transform="rotate(90)"/>
-     <use xlink:href="#cc" transform="rotate(135)"/>
-     <use xlink:href="#cc" transform="rotate(180)"/>
-     <use xlink:href="#cc" transform="rotate(225)"/>
-     <use xlink:href="#cc" transform="rotate(270)"/>
-     <use xlink:href="#cc" transform="rotate(315)"/>
+  <defs>
+    <circle id="cc" cx="0" cy="-50" r="50" fill="#ff0ff022"/>
+
+    <g id="cc3">
+      <use xlink:href="#cc"/>
+      <use xlink:href="#cc" transform="rotate(45)"/>
+    </g>
+  </defs>
+
+  <g id="flower">
+     <use xlink:href="#cc3" transform="rotate(0)"/>
+     <use xlink:href="#cc3" transform="rotate(90)"/>
+     <use xlink:href="#cc3" transform="rotate(180)"/>
+     <use xlink:href="#cc3" transform="rotate(270)"/>
+   </g>
 
 </svg>
